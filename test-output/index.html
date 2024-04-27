@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Selenium_Framework\testngPractice\TestXML\parameter.xml</span>
+                    <span>D:\Selenium_Framework\testngPractice\TestXML\listners.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="parameterTest">parameterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest3" class="method navigator-link" hash-for-method="parameterTest">parameterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest2" class="method navigator-link" hash-for-method="parameterTest2">parameterTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +127,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="dayaProviderImplement(manohar2, 123456)">dayaProviderImplement(manohar2, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="dayaProviderImplement(manohar1, 123456)">dayaProviderImplement(manohar1, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,22 +137,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="dayaProviderImplement(manohar1, 123456)">dayaProviderImplement(manohar1, 123456)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="parameterTest(https://tutorialsninja.com/demo/, https://tutorialsninja.com/demo/test)">parameterTest(https://tutorialsninja.com/demo/, https://tutorialsninja.com/demo/test)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest3" class="method navigator-link" hash-for-method="parameterTest(https://tutorialsninja.com/demo/class)">parameterTest(https://tutorialsninja.com/demo/class)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest2" class="method navigator-link" hash-for-method="parameterTest2(https://tutorialsninja.com/demo/test2)">parameterTest2(https://tutorialsninja.com/demo/test2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testpack.ParameterTest" class="method navigator-link" hash-for-method="dayaProviderImplement(manohar2, 123456)">dayaProviderImplement(manohar2, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -143,6 +152,69 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testpack.ParameterTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterTest2">
+                  </a> <!-- parameterTest2 -->
+                  <span class="method-name">parameterTest2</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by @Test on method parameterTest2 but has not been marked @Optional or defined
+in D:\Selenium_Framework\testngPractice\TestXML\listners.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testpack.ParameterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterTest">
+                  </a> <!-- parameterTest -->
+                  <span class="method-name">parameterTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;urls&apos; is required by @Test on method parameterTest but has not been marked @Optional or defined
+in D:\Selenium_Framework\testngPractice\TestXML\listners.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testpack.ParameterTest3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameterTest">
+                  </a> <!-- parameterTest -->
+                  <span class="method-name">parameterTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by @Test on method parameterTest but has not been marked @Optional or defined
+in D:\Selenium_Framework\testngPractice\TestXML\listners.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -151,10 +223,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dayaProviderImplement(manohar2, 123456)">
-                  </a> <!-- dayaProviderImplement(manohar2, 123456) -->
+                  <a name="dayaProviderImplement(manohar1, 123456)">
+                  </a> <!-- dayaProviderImplement(manohar1, 123456) -->
                   <span class="method-name">dayaProviderImplement</span>
-                  <span class="parameters">(manohar2,123456)</span>
+                  <span class="parameters">(manohar1,123456)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -167,50 +239,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="dayaProviderImplement(manohar1, 123456)">
-                  </a> <!-- dayaProviderImplement(manohar1, 123456) -->
+                  <a name="dayaProviderImplement(manohar2, 123456)">
+                  </a> <!-- dayaProviderImplement(manohar2, 123456) -->
                   <span class="method-name">dayaProviderImplement</span>
-                  <span class="parameters">(manohar1,123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="parameterTest(https://tutorialsninja.com/demo/, https://tutorialsninja.com/demo/test)">
-                  </a> <!-- parameterTest(https://tutorialsninja.com/demo/, https://tutorialsninja.com/demo/test) -->
-                  <span class="method-name">parameterTest</span>
-                  <span class="parameters">(https://tutorialsninja.com/demo/,https://tutorialsninja.com/demo/test)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testpack.ParameterTest3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="parameterTest(https://tutorialsninja.com/demo/class)">
-                  </a> <!-- parameterTest(https://tutorialsninja.com/demo/class) -->
-                  <span class="method-name">parameterTest</span>
-                  <span class="parameters">(https://tutorialsninja.com/demo/class)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testpack.ParameterTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="parameterTest2(https://tutorialsninja.com/demo/test2)">
-                  </a> <!-- parameterTest2(https://tutorialsninja.com/demo/test2) -->
-                  <span class="method-name">parameterTest2</span>
-                  <span class="parameters">(https://tutorialsninja.com/demo/test2)</span>
+                  <span class="parameters">(manohar2,123456)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,29 +250,23 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Selenium_Framework\testngPractice\TestXML\parameter.xml</span>
+            <span class="header-content">D:\Selenium_Framework\testngPractice\TestXML\listners.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;urls&quot; value=&quot;https://tutorialsninja.com/demo/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testpack.Listners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://tutorialsninja.com/demo/test&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testpack.ParameterTest&quot;/&gt;
-      &lt;class name=&quot;testpack.ParameterTest3&quot;&gt;
-        &lt;parameter name=&quot;url&quot; value=&quot;https://tutorialsninja.com/demo/class&quot;/&gt;
-      &lt;/class&gt; &lt;!-- testpack.ParameterTest3 --&gt;
+      &lt;class name=&quot;testpack.ParameterTest2&quot;/&gt;
+      &lt;class name=&quot;testpack.ParameterTest3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://tutorialsninja.com/demo/test2&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testpack.ParameterTest2&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,10 +278,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,32 +308,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dayaProviderImplement')
 data.setCell(0, 2, 'testpack.ParameterTest')
-data.setCell(0, 3, 13);
+data.setCell(0, 3, 21);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'parameterTest2')
-data.setCell(1, 2, 'testpack.ParameterTest2')
-data.setCell(1, 3, 8);
+data.setCell(1, 1, 'dayaProviderImplement')
+data.setCell(1, 2, 'testpack.ParameterTest')
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'parameterTest')
+data.setCell(2, 1, 'dayaProviderImplement')
 data.setCell(2, 2, 'testpack.ParameterTest')
-data.setCell(2, 3, 5);
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'parameterTest')
-data.setCell(3, 2, 'testpack.ParameterTest3')
-data.setCell(3, 3, 5);
+data.setCell(3, 2, 'testpack.ParameterTest')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'dayaProviderImplement')
-data.setCell(4, 2, 'testpack.ParameterTest')
-data.setCell(4, 3, 4);
+data.setCell(4, 1, 'parameterTest2')
+data.setCell(4, 2, 'testpack.ParameterTest2')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'dayaProviderImplement')
-data.setCell(5, 2, 'testpack.ParameterTest')
-data.setCell(5, 3, 3);
+data.setCell(5, 1, 'parameterTest')
+data.setCell(5, 2, 'testpack.ParameterTest3')
+data.setCell(5, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 ms</span>
+              <span class="suite-total-time">Total running time: 31 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -343,29 +366,11 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dayaProviderImplement(manohar1, 123456)</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dayaProviderImplement(manohar2, 123456)</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">parameterTest(https://tutorialsninja.com/demo/, https://tutorialsninja.com/demo/test)</span>
-                <span class="method-start">51 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testpack.ParameterTest3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">parameterTest(https://tutorialsninja.com/demo/class)</span>
-                <span class="method-start">71 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testpack.ParameterTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">parameterTest2(https://tutorialsninja.com/demo/test2)</span>
-                <span class="method-start">277 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
