@@ -4,6 +4,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import junit.framework.Assert;
+
 public class ParameterTest {
 
 	@Parameters({ "urls", "url" })
@@ -12,6 +14,7 @@ public class ParameterTest {
 		System.out.println("Parameter Test");
 		System.out.println(url);
 		System.out.println(url2);
+		
 	}
 
 	@Test(dataProvider = "getData")

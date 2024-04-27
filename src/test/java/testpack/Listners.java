@@ -15,7 +15,7 @@ public class Listners implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		
+		System.out.println("Test failure");
 	}
 
 	public void onTestSkipped(ITestResult result) {
