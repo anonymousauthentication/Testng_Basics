@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-27T11:51:04 IST" name="Suite" finished-at="2024-04-27T11:51:04 IST" duration-ms="423">
+    <groups>
+    </groups>
+    <test started-at="2024-04-27T11:51:04 IST" name="Test" finished-at="2024-04-27T11:51:04 IST" duration-ms="195">
+      <class name="testpack.ParameterTest3">
+        <test-method signature="parameterTest(java.lang.String)[pri:0, instance:testpack.ParameterTest3@5d0a1059]" started-at="2024-04-27T11:51:04 IST" name="parameterTest" finished-at="2024-04-27T11:51:04 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tutorialsninja.com/demo/class]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterTest -->
+      </class> <!-- testpack.ParameterTest3 -->
+      <class name="testpack.ParameterTest">
+        <test-method signature="dayaProviderImplement(java.lang.String,java.lang.String)[pri:0, instance:testpack.ParameterTest@5d7148e2]" started-at="2024-04-27T11:51:04 IST" name="dayaProviderImplement" data-provider="getData" finished-at="2024-04-27T11:51:04 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manohar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dayaProviderImplement -->
+        <test-method signature="dayaProviderImplement(java.lang.String,java.lang.String)[pri:0, instance:testpack.ParameterTest@5d7148e2]" started-at="2024-04-27T11:51:04 IST" name="dayaProviderImplement" data-provider="getData" finished-at="2024-04-27T11:51:04 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manohar1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dayaProviderImplement -->
+        <test-method signature="dayaProviderImplement(java.lang.String,java.lang.String)[pri:0, instance:testpack.ParameterTest@5d7148e2]" started-at="2024-04-27T11:51:04 IST" name="dayaProviderImplement" data-provider="getData" finished-at="2024-04-27T11:51:04 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manohar2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dayaProviderImplement -->
+        <test-method signature="parameterTest(java.lang.String,java.lang.String)[pri:0, instance:testpack.ParameterTest@5d7148e2]" started-at="2024-04-27T11:51:04 IST" name="parameterTest" finished-at="2024-04-27T11:51:04 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tutorialsninja.com/demo/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://tutorialsninja.com/demo/test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterTest -->
+      </class> <!-- testpack.ParameterTest -->
+    </test> <!-- Test -->
+    <test started-at="2024-04-27T11:51:04 IST" name="Test2" finished-at="2024-04-27T11:51:04 IST" duration-ms="37">
+      <class name="testpack.ParameterTest2">
+        <test-method signature="parameterTest2(java.lang.String)[pri:0, instance:testpack.ParameterTest2@70e9c95d]" started-at="2024-04-27T11:51:04 IST" name="parameterTest2" finished-at="2024-04-27T11:51:04 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tutorialsninja.com/demo/test2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parameterTest2 -->
+      </class> <!-- testpack.ParameterTest2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
